@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Connexion | Innership</title>
+  <title>Confirmation de compte | Innership</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,30 +35,30 @@
 
     <main id="main" class="vh100 w60">
       <section class="section vh100">
-        <p class="input-help fr">Vous n'avez pas de compte ? <a href="#">S'incrire</a></p>
+        <p class="input-help fr">Vous avez déjà un compte ? <a href="#">S'identifier.</a></p>
 
         <div class="vh100 flex-container flex-container-v">
 
           <form id="login-form" action="#" method="#" class="w60 margin">
             <fieldset>
 
-              <h2>Connectez-vous</h2>
-              <p>Entrez vos informations ci-dessous.</p>
+              <h2>Confirmez votre compte</h2>
+              <p>Entrez le code reçu dans votre boîte mail.</p>
 
-              <div class="mail text">
-                <label for="mail">Adresse mail</label>
-                <input type="email" name="mail" id="mail" data-rule-required="true" data-rule-email="true" data-msg-required="Merci de saisir votre adresse email." data-msg-email="Merci de saisir une adresse email valide." />
-              </div>
-
-              <div class="psw text">
-                <label for="password">Mot de passe
-                  <span class="input-help fr"><a href="#">Mot de passe oublié ?</a></span>
-                </label>
-                <input type="password" name="password" id="password" />
+              <div class="confirmation text">
+                <input type="text" placeholder="0" class="confirmCode" maxlength="1" name="confirm_1" id="confirm_1" data-rule-required="false" />
+                <input type="text" placeholder="0" class="confirmCode" maxlength="1" name="confirm_2" id="confirm_2" data-rule-required="false" />
+                <input type="text" placeholder="0" class="confirmCode" maxlength="1" name="confirm_3" id="confirm_3" data-rule-required="false" />
+                <input type="text" placeholder="0" class="confirmCode" maxlength="1" name="confirm_4" id="confirm_4" data-rule-required="false" />
+                <input type="text" placeholder="0" class="confirmCode" maxlength="1" name="confirm_5" id="confirm_5" data-rule-required="false" />
+                <input type="text" placeholder="0" class="confirmCode" maxlength="1" name="confirm_6" id="confirm_6" data-rule-required="false" />
               </div>
 
               <div class="submit">
-                <input class="submit" type="submit" value="continuer" />
+                <input class="submit" type="submit" value="Confirmer" />
+                <div class="input-help txtcenter">
+                <p><a href="#">Retour à l'inscription</a>.</p>
+                </div>
               </div>
 
             </fieldset>

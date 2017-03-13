@@ -445,22 +445,24 @@ html {
   font-size: calc(1em * 0.625); }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   background-color: #fff;
-  color: #000;
-  font-family: sans-serif;
+  color: #53585A;
+  font-family: "Lato", arial, helvetica, sans-serif;
   line-height: 1.4; }
   @media screen and (min-width: 544px) {
     body {
-      font-size: 1.6rem; } }
+      font-size: 1.8rem; } }
   @media screen and (min-width: 544px) {
     body {
       line-height: 1.5; } }
 
+html, body {
+  height: 100vh;
+  height: 100%; }
+
 a {
-  color: #333; }
-  a:focus, a:hover, a:active {
-    color: #000; }
+  color: #05B7FF; }
 
 ul,
 ol {
@@ -494,40 +496,40 @@ figure {
   line-height: 1.4; }
 
 h1, .h1-like {
-  font-size: 2.8rem; }
+  font-size: 3.5rem; }
   @media screen and (min-width: 544px) {
     h1, .h1-like {
-      font-size: 3.2rem; } }
+      font-size: 3.7rem; } }
 
 h2, .h2-like {
-  font-size: 2.4rem; }
+  font-size: 2.6rem; }
   @media screen and (min-width: 544px) {
     h2, .h2-like {
-      font-size: 2.8rem; } }
+      font-size: 3rem; } }
 
 h3, .h3-like {
-  font-size: 2rem; }
+  font-size: 2.4rem; }
   @media screen and (min-width: 544px) {
     h3, .h3-like {
-      font-size: 2.4rem; } }
+      font-size: 2.8rem; } }
 
 h4, .h4-like {
-  font-size: 1.8rem; }
+  font-size: 2rem; }
   @media screen and (min-width: 544px) {
     h4, .h4-like {
-      font-size: 2rem; } }
+      font-size: 2.4rem; } }
 
 h5, .h5-like {
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
   @media screen and (min-width: 544px) {
     h5, .h5-like {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 h6, .h6-like {
-  font-size: 1.4rem; }
+  font-size: 1.6rem; }
   @media screen and (min-width: 544px) {
     h6, .h6-like {
-      font-size: 3.2rem; } }
+      font-size: 3.7rem; } }
 
 /* alternate font-sizing */
 .smaller {
@@ -583,7 +585,8 @@ h5:first-child,
 .h5-like:first-child,
 h6:first-child,
 .h6-like:first-child {
-  margin-top: 0; }
+  margin-top: 0;
+  font-weight: 400; }
 
 /* avoid margins on nested elements */
 li p,
@@ -778,6 +781,19 @@ th {
   border: 1px #aaa dotted;
   text-align: left; }
 
+.margin {
+  margin: auto; }
+
+.input-help {
+  font-size: 1.3rem;
+  font-weight: 400; }
+  .input-help a {
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+    .input-help a:hover, .input-help a:focus {
+      color: #53585A; }
+
 /* ----------------------------- */
 /* ==Misc (skip links, hyphens)  */
 /* ----------------------------- */
@@ -876,11 +892,15 @@ input,
 optgroup,
 select,
 textarea {
-  color: #000; }
+  color: #53585A; }
 
 label {
-  vertical-align: middle;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  line-height: 2; }
 
 legend {
   border: 0;
@@ -903,11 +923,11 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   display: none; }
 
 ::-webkit-input-placeholder {
-  color: #777; }
+  color: #A0ABAF; }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #777; }
+  color: #A0ABAF; }
 
 .btn:focus,
 input[type="button"]:focus,
@@ -939,6 +959,139 @@ input[type="reset"].unstyled {
   input[type="reset"].unstyled:focus {
     box-shadow: none;
     outline: none; }
+
+#login-form fieldset {
+  padding: 0;
+  margin: 0; }
+
+#login-form h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 2rem; }
+  #login-form h2 + p {
+    font-size: 1.6rem;
+    margin-bottom: 3.5rem; }
+
+#login-form input:not(.submit):not(.confirmCode) {
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  border: solid 1px #E0E0E0;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0 1rem; }
+  #login-form input:not(.submit):not(.confirmCode)::-webkit-input-placeholder {
+    color: #A0ABAF !important;
+    font-weight: 400 !important; }
+  #login-form input:not(.submit):not(.confirmCode)::-moz-input-placeholder {
+    color: #A0ABAF !important;
+    font-weight: 400 !important; }
+  #login-form input:not(.submit):not(.confirmCode)::-moz-placeholder {
+    color: #A0ABAF !important;
+    font-weight: 400 !important; }
+  #login-form input:not(.submit):not(.confirmCode)::-ms-input-placeholder {
+    color: #A0ABAF !important;
+    font-weight: 400 !important; }
+  #login-form input:not(.submit):not(.confirmCode):focus {
+    border-color: #05B7FF;
+    outline: none; }
+  #login-form input:not(.submit):not(.confirmCode).error {
+    background: rgba(255, 5, 71, 0.07);
+    border-color: #FF0547; }
+
+#login-form label.error {
+  font-size: 1.3rem;
+  color: #FF0547;
+  text-transform: none;
+  margin-top: 0; }
+
+#login-form .text {
+  display: block;
+  margin-bottom: 2rem; }
+  #login-form .text .input-help {
+    font-size: 1.2rem;
+    text-transform: none; }
+    #login-form .text .input-help a {
+      color: #53585A; }
+      #login-form .text .input-help a:hover, #login-form .text .input-help a:focus {
+        color: #05B7FF; }
+
+#login-form .submit {
+  display: block;
+  width: 100;
+  text-align: center;
+  margin-bottom: 2rem; }
+  #login-form .submit input {
+    border-radius: 100px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    heihgt: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #fff;
+    background: #05B7FF;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 3.5rem;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+    #login-form .submit input:hover, #login-form .submit input:focus {
+      background: #53585A; }
+  #login-form .submit .input-help {
+    color: #A0ABAF; }
+
+#login-form .confirmation {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  #login-form .confirmation input {
+    width: 12%;
+    height: 7rem;
+    line-height: 7rem;
+    padding: 0;
+    text-align: center;
+    border: solid 1px #E0E0E0;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    #login-form .confirmation input::-webkit-input-placeholder {
+      color: #A0ABAF !important;
+      font-weight: 400 !important; }
+    #login-form .confirmation input::-moz-input-placeholder {
+      color: #A0ABAF !important;
+      font-weight: 400 !important; }
+    #login-form .confirmation input::-moz-placeholder {
+      color: #A0ABAF !important;
+      font-weight: 400 !important; }
+    #login-form .confirmation input::-ms-input-placeholder {
+      color: #A0ABAF !important;
+      font-weight: 400 !important; }
+    #login-form .confirmation input:focus {
+      border-color: #05B7FF;
+      outline: none; }
+      #login-form .confirmation input:focus::-webkit-input-placeholder {
+        color: #fff !important;
+        font-weight: 400 !important; }
+      #login-form .confirmation input:focus::-moz-input-placeholder {
+        color: #fff !important;
+        font-weight: 400 !important; }
+      #login-form .confirmation input:focus::-moz-placeholder {
+        color: #fff !important;
+        font-weight: 400 !important; }
+      #login-form .confirmation input:focus::-ms-input-placeholder {
+        color: #fff !important;
+        font-weight: 400 !important; }
+    #login-form .confirmation input.error {
+      background: rgba(255, 5, 71, 0.07);
+      border-color: #FF0547; }
 
 /* Media object */
 /* see http://codepen.io/raphaelgoetter/pen/KMWWwj */
@@ -1091,6 +1244,21 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .flex-item-center,
 .item-center {
   margin: auto; }
+
+/*    @STRUCTURE
+-----------------------------------*/
+.vh100 {
+  height: 100%;
+  height: 100vh; }
+
+#main .section {
+  width: 65%;
+  margin: auto;
+  position: relative; }
+  #main .section > .input-help {
+    position: absolute;
+    top: 4rem;
+    right: 0; }
 
 /* ---------------------------------- */
 /* ==Helpers                          */
@@ -1979,6 +2147,26 @@ ul.is-unstyled, ul.unstyled {
     width: calc(100% / 4 - 2rem - 0.01px); }
   [class*="-small-4"].has-gutter-xl > * {
     width: calc(100% / 4 - 4rem - 0.01px); } }
+
+/* ----------------------------- */
+/* ==Header                       */
+/* ----------------------------- */
+#masthead {
+  background: url(../images/bg-panel.jpg) no-repeat 50% 50%/cover;
+  color: #fff;
+  position: relative; }
+  #masthead .logo {
+    position: absolute;
+    top: 4rem;
+    left: 20%; }
+    #masthead .logo h1 {
+      margin: 0; }
+  #masthead h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500; }
+  #masthead p {
+    font-weight: 300; }
 
 /* ----------------------------- */
 /* ==Own stylesheet              */

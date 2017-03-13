@@ -35,8 +35,12 @@ textarea {
 }
 
 label {
-  vertical-align: middle;
   cursor: pointer;
+  font-size: $tiny-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  line-height: 2;
 }
 
 legend {
@@ -70,12 +74,12 @@ input[type="search"] {
 }
 
 ::-webkit-input-placeholder {
-  color: #777;
+  color: $color4;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #777;
+  color: $color4;
 }
 
 .#{$kna-namespace}btn,
@@ -111,6 +115,128 @@ input[type="reset"] {
     &:focus {
       box-shadow: none;
       outline: none;
+    }
+  }
+}
+
+//formulaire Innership
+
+#login-form {
+  fieldset {
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    font-size: $h2-size;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: $medium-value;
+    + p {
+      font-size: $base-font-size;
+      margin-bottom: 3.5rem;
+    }
+  }
+  input:not(.submit):not(.confirmCode) {
+    font-size: $base-font-size;
+    font-weight: 400;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    border: solid 1px $color6;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    padding: 0 1rem;
+    &::-webkit-input-placeholder { color: $color4 !important; font-weight: 400 !important; }
+    &::-moz-input-placeholder { color: $color4 !important; font-weight: 400 !important; }
+    &::-moz-placeholder { color: $color4 !important; font-weight: 400 !important; }
+    &::-ms-input-placeholder { color: $color4 !important; font-weight: 400 !important; }
+    &:focus {
+      border-color: $color3;
+      outline: none;
+    }
+    &.error {
+      background: rgba(255, 5, 71, 0.07);
+      border-color: $color-error;
+    }
+  }
+  label.error {
+    font-size: 1.3rem;
+    color: $color-error;
+    text-transform: none;
+    margin-top: 0;
+  }
+  .text {
+    display: block;
+    margin-bottom: $medium-value;
+    .input-help {
+      font-size: $tiny-size;
+      text-transform: none;
+      a {
+        color: $color-base;
+        &:hover, &:focus {
+          color: $color3;
+        }
+      }
+    }
+  }
+  .submit {
+    display: block;
+    width: 100;
+    text-align: center;
+    margin-bottom: 2rem;
+    input {
+      border-radius: 100px;
+      border: none;
+      display: inline-block;
+      cursor: pointer;
+      heihgt: 4.5rem;
+      line-height: 4.5rem;
+      text-align: center;
+      color: $color2;
+      background: $color3;
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 0 3.5rem;
+      transition: background 0.3s ease;
+
+      &:hover, &:focus {
+        background: $color1;
+      }
+    }
+    .input-help {
+      color: $color4;
+    }
+  }
+  .confirmation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 12%;
+      height: 7rem;
+      line-height: 7rem;
+      padding: 0;
+      text-align: center;
+      border: solid 1px $color6;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      &::-webkit-input-placeholder { color: $color4 !important; font-weight: 400 !important; }
+      &::-moz-input-placeholder { color: $color4 !important; font-weight: 400 !important; }
+      &::-moz-placeholder { color: $color4 !important; font-weight: 400 !important; }
+      &::-ms-input-placeholder { color: $color4 !important; font-weight: 400 !important; }
+      &:focus {
+        border-color: $color3;
+        outline: none;
+          &::-webkit-input-placeholder { color: $color2 !important; font-weight: 400 !important; }
+          &::-moz-input-placeholder { color: $color2 !important; font-weight: 400 !important; }
+          &::-moz-placeholder { color: $color2 !important; font-weight: 400 !important; }
+         &::-ms-input-placeholder { color: $color2 !important; font-weight: 400 !important; }
+      }
+      &.error {
+        background: rgba(255, 5, 71, 0.07);
+        border-color: $color-error;
+      }
     }
   }
 }

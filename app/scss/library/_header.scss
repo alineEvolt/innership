@@ -1,0 +1,25 @@
+/* ----------------------------- */
+/* ==Header                       */
+/* ----------------------------- */
+
+#masthead {
+  background: url(../images/bg-panel.jpg) no-repeat 50% 50% / cover;
+  color: $color2;
+  position: relative;
+  .logo {
+    position: absolute;
+    top: $large-value;
+    left: 20%;
+    h1 {
+      margin: 0;
+    }
+  }
+  h2 {
+    margin: 0;
+    font-size: $h5-size;
+    font-weight: 500;
+  }
+  p {
+    font-weight: 300;
+  }
+}

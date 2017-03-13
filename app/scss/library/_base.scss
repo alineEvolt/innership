@@ -37,6 +37,11 @@ body {
   }
 }
 
+html, body {
+  height: 100vh;
+  height: 100%;
+}
+
 a {
   color: $color-link;
 
@@ -210,6 +215,7 @@ h6,
 .#{$kna-namespace}h6-like {
   &:first-child {
     margin-top: 0;
+    font-weight: 400;
   }
 }
 

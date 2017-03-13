@@ -114,3 +114,19 @@ th {
   border: 1px #aaa dotted;
   text-align: left;
 }
+
+.margin {
+  margin: auto;
+}
+
+.input-help {
+  font-size: 1.3rem;
+  font-weight: 400;
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover, &:focus {
+      color: $color-base;
+    }
+  }
+}

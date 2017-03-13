@@ -120,3 +120,25 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .#{$kna-namespace}item-center {
   margin: auto;
 }
+
+/*    @STRUCTURE
+-----------------------------------*/
+
+.vh100 {
+  height: 100%;
+  height: 100vh;
+}
+
+#main {
+  .section {
+    width: 65%;
+    margin: auto;
+    position: relative;
+    > .input-help {
+      position: absolute;
+      top: $large-value;
+      right: 0;
+    }
+  }
+}
+

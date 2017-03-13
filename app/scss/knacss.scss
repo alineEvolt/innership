@@ -50,11 +50,13 @@
 // Utilities
 @import "utilities/_layout.scss"; // alignment, modules, positionning
 @import "utilities/_helpers.scss"; // width and spacers helpers
-// @import "utilities/_wordpress.scss"; // WordPress reset and basic styles
 @import "utilities/_responsive.scss"; // Responsive Web Design helpers
 
 // Grids
 @import "grids/_grillade.scss"; // grids
+
+//custom
+@import "library/_header.scss"; // Header
 
 
 /* ----------------------------- */
